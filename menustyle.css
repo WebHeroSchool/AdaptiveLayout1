@@ -1,0 +1,42 @@
+.main-menu ul li {
+  display: inline-block;
+}
+
+.response-menu {
+  display: none;
+  width: 250px;
+  background: cyan;
+  position: fixed;
+  left: -228px;
+  top: 0;
+  bottom: 0;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.image {
+  width: 20px;
+  height: 20px;
+  right: 2px;
+  position: absolute;
+}
+
+.response-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.response-menu:hover {
+  left: 0;
+}
+
+@media (max-width:640px) {
+  .response-menu {
+    display: block;
+  }
+
+  .main-menu {
+    display: none;
+  }
+}
